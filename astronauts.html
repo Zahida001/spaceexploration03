@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <style>
+        body {
+            background-image: url('starry%20.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: white;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .gallery-item {
+            text-align: center;
+            margin: 15px;
+            width: 200px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .gallery-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.1);
+            opacity: 0.8;
+        }
+
+        .gallery-item p {
+            margin-top: 10px;
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+        }
+
+        .gallery-item .facts {
+            font-size: 14px;
+            color: #ddd;
+            font-family: Arial, sans-serif;
+            margin-top: 10px;
+            text-align: justify;
+        }
+    </style>
+</head>
+<body>
+
+<h1 style="text-align:center; color:white; font-size: 36px; margin-top: 20px;">Famous Astronauts in Space History</h1>
+
+<div class="gallery">
+    <!-- Yuri Gagarin -->
+    <div class="gallery-item">
+        <img src="yuri.jpg" alt="Yuri Gagarin">
+        <b><p>Yuri Gagarin</p></b>
+        <div class="facts">
+            <p>Yuri Gagarin, a Soviet cosmonaut, made history as the first human to journey into outer space. He made a single orbit around Earth aboard the spacecraft Vostok 1 on April 12, 1961. His mission lasted only 108 minutes, but it marked a pivotal moment in the Space Race between the Soviet Union and the United States.</p>
+            <p>He was 27 years old at the time of his flight and was chosen for his strength, good health, and ability to withstand the psychological pressure of spaceflight. Gagarin became an international hero, and his achievement laid the groundwork for future human space exploration.</p>
+            <div><b>Mission Details:</b></div>
+            <ul>
+                <li><b>Year:</b> 1961</li>
+                <li><b>Spacecraft:</b> Vostok 1</li>
+                <li><b>Mission Duration:</b> 108 minutes</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Neil Armstrong -->
+    <div class="gallery-item">
+        <img src="neil.jpg" alt="Neil Armstrong">
+        <b><p>Neil Armstrong</p></b>
+        <div class="facts">
+            <p>Neil Armstrong made history on July 20, 1969, when he became the first person to set foot on the Moon during NASA's Apollo 11 mission. Armstrong's famous words, "That's one small step for [a] man, one giant leap for mankind," marked a defining moment in human space exploration.</p>
+            <p>Before becoming an astronaut, Armstrong was a naval aviator and test pilot. His Apollo 11 mission was not only the pinnacle of his career but also a monumental achievement for the United States, as it was the first successful manned lunar landing. He spent a total of 21 hours on the Moon’s surface, collecting samples and conducting experiments.</p>
+            <a href="https://en.wikipedia.org/wiki/Neil_Armstrong" target="_blank" style="color: #f39c12; font-weight: bold;">Learn more about Neil Armstrong</a>
+            <div><b>Mission Details:</b></div>
+            <ul>
+                <li><b>Year:</b> 1969</li>
+                <li><b>Spacecraft:</b> Apollo 11</li>
+                <li><b>Mission Duration:</b> 8 days, 14 hours, 12 minutes</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Rakesh Sharma -->
+    <div class="gallery-item">
+        <img src="rakesh.jpg" alt="Rakesh Sharma">
+        <b><p>Rakesh Sharma</p></b>
+        <div class="facts">
+            <p>Rakesh Sharma is India’s first astronaut, and he flew to space on April 3, 1984, aboard the Soviet spacecraft Soyuz T-11. As a pilot in the Indian Air Force, Sharma became a symbol of India's growing prowess in space exploration. He was part of a joint Indo-Soviet mission, and his famous quote, when asked by then Prime Minister Indira Gandhi about how India looked from space, was "Saare Jahan Se Achha" ("Better than the entire world").</p>
+            <p>Sharma’s flight lasted 7 days, 21 hours, and 40 minutes. His successful mission sparked interest in space exploration among Indian youth, making him a national hero.</p>
+            <div><b>Mission Details:</b></div>
+            <ul>
+                <li><b>Year:</b> 1984</li>
+                <li><b>Spacecraft:</b> Soyuz T-11</li>
+                <li><b>Mission Duration:</b> 7 days, 21 hours, 40 minutes</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Kalpana Chawla -->
+    <div class="gallery-item">
+        <img src="kalpana.jpg" alt="Kalpana Chawla">
+        <b><p>Kalpana Chawla</p></b>
+        <div class="facts">
+            <p>Kalpana Chawla was the first woman of Indian origin in space. She completed two space missions: the first on Space Shuttle Columbia during the STS-87 mission in 1997, and the second during the ill-fated STS-107 mission in 2003. Tragically, during re-entry, Columbia disintegrated, and Chawla and her crew lost their lives.</p>
+            <p>Chawla's journey from a small town in India to becoming an astronaut with NASA is an inspiring story of resilience and determination. She was posthumously awarded numerous honors and remains a symbol of courage and perseverance in space exploration.</p>
+            <div><b>Mission Details:</b></div>
+            <ul>
+                <li><b>Years:</b> 1997, 2003</li>
+                <li><b>Spacecraft:</b> Space Shuttle Columbia</li>
+                <li><b>Mission Duration:</b> 31 days, 14 hours, 54 minutes (total for both missions)</li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Sunita Williams -->
+    <div class="gallery-item">
+        <img src="sunita.jpg" alt="Sunita Williams">
+        <b><p>Sunita Williams</p></b>
+        <div class="facts">
+            <p>Sunita Williams is one of NASA’s most accomplished astronauts and holds the record for the most spacewalks by a woman (7). She flew on two space missions: STS-116 in 2006 aboard the Space Shuttle Discovery, and Expedition 14/15 aboard the International Space Station (ISS) from 2007 to 2008. During her time in space, she spent a total of 322 days, 17 hours, and 40 minutes orbiting Earth.</p>
+            <p>Williams also contributed to numerous scientific experiments and helped with space station maintenance. Her legacy continues to inspire many, especially women and people of Indian origin, to pursue careers in science and technology.</p>
+            <div><b>Mission Details:</b></div>
+            <ul>
+                <li><b>Years:</b> 2006, 2007-2008</li>
+                <li><b>Spacecraft:</b> Space Shuttle Discovery, ISS</li>
+                <li><b>Mission Duration:</b> 322 days, 17 hours, 40 minutes</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="planets.html">
+        <button style="font-size: 1.2rem; padding: 10px 20px; background-color: #f39c12; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+            Back to Planets
+        </button>
+    </a>
+</div>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="index.html">
+        <button style="font-size: 1.2rem; padding: 10px 20px; background-color: #f39c12; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+            Back to Home
+        </button>
+    </a>
+</div>
+</body>
+</html>

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planets - Space Exploration</title>
+    <style>
+        body {
+            background-image: url('starry%20.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 20px;
+        }
+        
+        .gallery-item {
+            text-align: center;
+            margin: 15px;
+            width: 200px;
+        }
+        
+        .gallery-item img {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+        
+        .gallery-item p {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+        
+        .gallery-item .facts {
+            font-size: 14px;
+            color: #ddd;
+            text-align: justify;
+            margin-top: 10px;
+        }
+
+        .gallery-item .fact-heading {
+            font-size: 16px;
+            font-weight: bold;
+            color: #f39c12;
+            margin-bottom: 5px;
+        }
+
+        /* Planet Comparison section */
+        .comparison {
+            margin: 40px auto;
+            width: 80%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .comparison h2 {
+            font-size: 24px;
+            color: #f39c12;
+        }
+
+        .comparison-table {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .comparison-table div {
+            text-align: center;
+            margin: 0 15px;
+            width: 150px;
+        }
+
+        .comparison-table img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .comparison-table p {
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .comparison-table .planet-name {
+            font-weight: bold;
+            color: #f39c12;
+        }
+        
+        .comparison-table .planet-stats {
+            margin-top: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+
+<!-- Planets Gallery -->
+<div class="gallery">
+    <div class="gallery-item">
+        <img src="mer.jpg" alt="Mercury">
+        <p>Mercury</p>
+        <div class="facts">
+            <div class="fact-heading">Did you know?</div>
+            <p>Mercury is the smallest planet in our solar system and the closest to the Sun.</p>
+            <p>It has no atmosphere, leading to extreme temperature variations.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="ven.jpg" alt="Venus">
+        <p>Venus</p>
+        <div class="facts">
+            <div class="fact-heading">Did you know?</div>
+            <p>Venus has a thick atmosphere mostly made of carbon dioxide.</p>
+            <p>It's the hottest planet in the solar system, with surface temperatures hot enough to melt lead.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="ear.jpg" alt="Earth">
+        <p>Earth</p>
+        <div class="facts">
+            <div class="fact-heading">Did you know?</div>
+            <p>Earth is the only known planet to support life.</p>
+            <p>It has one natural satellite, the Moon, and is composed of a vast amount of water, mainly in oceans.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="mars.jpg" alt="Mars">
+        <p>Mars</p>
+        <div class="facts">
+            <div class="fact-heading">Did you know?</div>
+            <p>Mars is known as the Red Planet because of its reddish appearance.</p>
+            <p>It has the tallest volcano and the deepest, longest canyon in the solar system.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="jup.jpg" alt="Jupiter">
+        <p>Jupiter</p>
+        <div class="facts">
+            <div class="fact-heading">Did you know?</div>
+            <p>Jupiter is the largest planet in the solar system and is mostly made of hydrogen and helium.</p>
+            <p>It has the Great Red Spot, a massive storm that has been raging for centuries.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="sat.jpg" alt="Saturn">
+        <p>Saturn</p>
+        <div class="facts">
+            <div class="fact-heading">Did you know?</div>
+            <p>Saturn is famous for its stunning ring system, made mostly of ice particles and rock debris.</p>
+            <p>It is the second-largest planet in the solar system and has at least 82 moons.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="ura.jpg" alt="Uranus">
+        <p>Uranus</p>
+        <div class="facts">
+            <div class="fact-heading">Did you know?</div>
+            <p>Uranus is unique because it rotates on its side, making its axial tilt 98 degrees.</p>
+            <p>It is an ice giant with a methane-rich atmosphere that gives it a blue-green color.</p>
+        </div>
+    </div>
+    <div class="gallery-item">
+        <img src="nep.jpg" alt="Neptune">
+        <p>Neptune</p>
+        <div class="facts">
+            <div class="fact-heading">Did you know?</div>
+            <p>Neptune is the farthest planet from the Sun in our solar system.</p>
+            <p>It has the strongest winds in the solar system, reaching speeds of up to 1,500 miles per hour.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Planet Comparison section -->
+<div class="comparison">
+    <h2>Compare All Planets with Earth</h2>
+    <div class="comparison-table">
+        <!-- Earth Comparison -->
+        <div>
+            <img src="ear.jpg" alt="Earth">
+            <p class="planet-name">Earth</p>
+            <div class="planet-stats">
+                <p>Diameter: 12,742 km</p>
+                <p>Distance from Sun: 150 million km</p>
+                <p>Moons: 1 (Moon)</p>
+                <p>Atmosphere: Nitrogen, Oxygen</p>
+                <p>Surface: 71% Water</p>
+            </div>
+        </div>
+
+        <!-- Mercury Comparison -->
+        <div>
+            <img src="mer.jpg" alt="Mercury">
+            <p class="planet-name">Mercury</p>
+            <div class="planet-stats">
+                <p>Diameter: 4,880 km</p>
+                <p>Distance from Sun: 57.9 million km</p>
+                <p>Moons: 0</p>
+                <p>Atmosphere: Very Thin (Mostly Oxygen)</p>
+                <p>Surface: Rocky, No Water</p>
+            </div>
+        </div>
+
+        <!-- Venus Comparison -->
+        <div>
+            <img src="ven.jpg" alt="Venus">
+            <p class="planet-name">Venus</p>
+            <div class="planet-stats">
+                <p>Diameter: 12,104 km</p>
+                <p>Distance from Sun: 108.2 million km</p>
+                <p>Moons: 0</p>
+                <p>Atmosphere: Carbon Dioxide</p>
+                <p>Surface: Rocky, Acidic Clouds</p>
+            </div>
+        </div>
+
+        <!-- Mars Comparison -->
+        <div>
+            <img src="mars.jpg" alt="Mars">
+            <p class="planet-name">Mars</p>
+            <div class="planet-stats">
+                <p>Diameter: 6,779 km</p>
+                <p>Distance from Sun: 227.9 million km</p>
+                <p>Moons: 2</p>
+                <p>Atmosphere: Carbon Dioxide</p>
+                <p>Surface: Rocky, Potential for Water</p>
+            </div>
+        </div>
+
+        <!-- Jupiter Comparison -->
+        <div>
+            <img src="jup.jpg" alt="Jupiter">
+            <p class="planet-name">Jupiter</p>
+            <div class="planet-stats">
+                <p>Diameter: 139,820 km</p>
+                <p>Distance from Sun: 778.5 million km</p>
+                <p>Moons: 79</p>
+                <p>Atmosphere: Hydrogen, Helium</p>
+                <p>Surface: Gas Giant</p>
+            </div>
+        </div>
+
+        <!-- Saturn Comparison -->
+        <div>
+            <img src="sat.jpg" alt="Saturn">
+            <p class="planet-name">Saturn</p>
+            <div class="planet-stats">
+                <p>Diameter: 116,460 km</p>
+                <p>Distance from Sun: 1.4 billion km</p>
+                <p>Moons: 82</p>
+                <p>Atmosphere: Hydrogen, Helium</p>
+                <p>Surface: Gas Giant, Rings</p>
+            </div>
+        </div>
+
+        <!-- Uranus Comparison -->
+        <div>
+            <img src="ura.jpg" alt="Uranus">
+            <p class="planet-name">Uranus</p>
+            <div class="planet-stats">
+                <p>Diameter: 50,724 km</p>
+                <p>Distance from Sun: 2.9 billion km</p>
+                <p>Moons: 27</p>
+                <p>Atmosphere: Hydrogen, Helium</p>
+                <p>Surface: Ice Giant</p>
+            </div>
+        </div>
+
+        <!-- Neptune Comparison -->
+        <div>
+            <img src="nep.jpg" alt="Neptune">
+            <p class="planet-name">Neptune</p>
+            <div class="planet-stats">
+                <p>Diameter: 49,244 km</p>
+                <p>Distance from Sun: 4.5 billion km</p>
+                <p>Moons: 14</p>
+                <p>Atmosphere: Hydrogen, Helium, Methane</p>
+                <p>Surface: Ice Giant</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="index.html">
+        <button style="font-size: 1.2rem; padding: 10px 20px; background-color: #f39c12; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+            Back to Home
+        </button>
+    </a>
+</div>
+<div style="text-align: center; margin-top: 20px;">
+    <a href="astronauts.html">
+        <button style="font-size: 1.2rem; padding: 10px 20px; background-color: #f39c12; color: white; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s;">
+            Next: Astronauts
+        </button>
+    </a>
+</div>
+</body>
+</html>
